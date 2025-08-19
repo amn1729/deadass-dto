@@ -1,3 +1,5 @@
+// https://github.com/amn1729/deadass-dto
+
 /**
  * Represents a base shape of Response info.
  * @typedef {Object} Resp
