@@ -57,6 +57,16 @@ class Response {
   }
 
   /**
+   * Set the type of the Response.
+   * @param {string} t - The new message of the Response.
+   * @returns {Response} The Response.
+   */
+  type(t) {
+    this.#resp.type = t;
+    return this;
+  }
+
+  /**
    * Set the action of the Response.
    * @param {string} name - The new action of the Response.
    * @returns {Response} The Response.
@@ -104,4 +114,5 @@ class Response {
   }
 }
 
-export default Response;
+// export default Response;
+module.exports = Response;
