@@ -94,6 +94,14 @@ class Response {
   toJson() {
     return Object.assign({ ...this.#resp, data: this });
   }
+
+  /**
+   * Perform arbitary callback on the Response.
+   * Calls this.toJson to transforms the data
+   */
+  callback(cb) {
+    return cb(this.toJson());
+  }
 }
 
 export default Response;

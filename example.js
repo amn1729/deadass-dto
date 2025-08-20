@@ -29,7 +29,7 @@ const users = new PaginatedUsersDto()
     page: 10,
     length: 30,
   })
-  .toJson();
+  .callback(cb);
 
 console.log(user);
 console.log(users);
